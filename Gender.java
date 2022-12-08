@@ -1,5 +1,6 @@
-package com.xworkz.hasa.constant;
+package com.xworkz.relationship.constant;
 
-public enum Gender {
-male,female,others;
+public enum Gender 
+{
+female,male,transgender,others;
 }
