@@ -1,249 +1,240 @@
-package com.xworkz.configuration;
+package com.xworkz.bean;
 
 import java.time.LocalDate;
-import java.time.LocalTime;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
-import com.xworkz.configuration.bean.Hardwareshop;
+import com.xworkz.things.Gender;
+import com.xworkz.things.Type;
 
 @Configuration
-@ComponentScan("com.xworkz")
+@ComponentScan("com.xworkz.things")
 public class BeanConfiguration {
 	@Bean
 	public Integer ids()
 	{
-		System.out.println("created Hardwareshop");
-		int ide=10;
-		return ide;
-
+		System.out.println("registered id");
+		int a=101;
+		return a;
 	}
 	@Bean
 	public String names()
 	{
-		System.out.println("created name Hardwareshop");
-		return "infosys";
-	}
-	@Bean
-	public String gstNumber()
-	{
-		System.out.println("created gst Hardwareshop");
-		return "s123t";
+		System.out.println("registered name");
+		return "sumanth";		
 	}
 	@Bean
 	public String ownerNames()
 	{
-		System.out.println("created owner Hardwareshop");
+		System.out.println("registered ownerName");
 		return "sangeetha";
 	}
 	@Bean
-	public String add()
+	public String lang()
 	{
-		System.out.println("created add  Hardwareshop");
-		return "banglore";
+		System.out.println("register language");
+		return "kannada";
 	}
 	@Bean
-	public String nam()
+	public Double prc()
 	{
-		System.out.println("create a method with name");
-		return "prime";
+		System.out.println("register price");
+		return 20.34;
 	}
-	@Bean
-	public String vaersions()
-	{
-		System.out.println("create a method with versions");
-		String ref="1.8ver";
-		return ref;
-	}
-
-	@Bean
-	public String developers()
-	{
-		System.out.println("create method with developer");
-		return "sangeetha";
-	}
-	@Bean
-	public LocalDate dat()
-	{
-		System.out.println("create method with date");
-		return LocalDate.of(2022, 01, 11);
-	}
-	@Bean
-	public boolean frees()
-	{
-		System.out.println("create method with free");
-		return false;
-	}
-	@Bean
-	public String name()
-	{
-		System.out.println("create software engineer method with name");
-		return "sumanth";
-	}
-	@Bean
-	public Integer sal()
-	{
-		System.out.println("create software engineer method with sal");
-		Integer r=20000;
-		return r;
-	}
-	@Bean
-	public String compy()
-	{
-		System.out.println("create software engineer method with compny name");
-		return "infosys";
-
-	}
-	@Bean
-	public String exp()
-	{
-		System.out.println("create software engineer method with name");
-		return "4 years";
-	}
-	@Bean
-	public String name1()
-	{
-		System.out.println("create pencil method with name");
-		return "Apsara";
-	}
-	@Bean
-	public String typ()
-	{
-		System.out.println("create pencil method with type");
-		return "with rubber";
-	}
-	@Bean
-	public Integer pric()
-	{
-		System.out.println("create pencil method with price");
-		Integer i=12;
-		return i;
-
-	}
-	@Bean
-	public String clr()
-	{
-		System.out.println("create pencil method with clr");
-		return "black";
-	}
-	@Bean
-	public boolean sharp()
-	{
-		System.out.println("create pencil method with sharp");
-		return true;
-	}
-	@Bean
-	public boolean stl()
-	{
-		System.out.println("create pencil method with stl");
-		return false;
-	}
-	@Bean
-	public String nam1()
-	{
-		System.out.println("create rubber method with name");
-		return "natraj";
-	}
-	@Bean
-	public String types()
-	{
-		System.out.println("create rubber method with type");
-		return "without dust";
-	}
-	@Bean
-	public Integer prices()
-	{
-		System.out.println("create rubber method with type");
-		int p=5;
-		return p;
-	}
-	@Bean
-	public String colors()
-	{
-		System.out.println("create rubber method with color");
-		return "white";
-	}
-	@Bean
-	public String shapes()
-	{
-		System.out.println("create rubber method with shape");
-		return "square";
-	}
-	@Bean
-	public boolean stl1()
-	{
-		System.out.println("create pencil method with stolen");
-		return false;
-	}
-	@Bean
-	public Integer sizes()
-	{
-		System.out.println("create pencil method with size");
-		int s=23;
-		return s;
-	}
+	//	-------------------------------------------------
 	@Bean
 	public String names1()
 	{
-		System.out.println("create pencil method with names");
-		return "apple";
+		System.out.println("register name");
+		return "german engine";
 	}
 	@Bean
-	public String clr1()
+	public Type types()
 	{
-		System.out.println("create pencil method with color");
+		System.out.println("register type");
+		return Type.big;
+	}
+	@Bean
+	public String comp()
+	{
+		System.out.println("register company");
+		return "jerman";
+	}
+
+	@Bean
+	public Integer num()
+	{
+		System.out.println("register number");
+		int n=13;
+		return n;
+	}
+	@Bean
+	public Double ver()
+	{
+		System.out.println("register version");
+		return 1.4;
+	}
+	@Bean 
+	public Boolean str()
+	{
+		System.out.println("register stroke");
+		return false;
+	}
+//----------------------------------------------
+	@Bean
+	public String sname()
+	{
+		System.out.println("register name");
+		return "red cobra";
+	}
+	@Bean
+	public Double slength()
+	{
+		System.out.println("register length");
+		return 1.4;
+	}
+	@Bean
+	public String scolor()
+	{
+		System.out.println("register name");
 		return "red";
 	}
 	@Bean
-	public String shp()
+	public Type stype()
 	{
-		System.out.println("create pencil method with shp");
-		return "round";
+		System.out.println("register type");
+		return Type.big;
+	}
+	@Bean 
+	public Boolean spisionous()
+	{
+		System.out.println("register spisionous");
+		return true;
+	}
+//	---------------------------------------------------------
+	@Bean
+	public String gname()
+	{
+		System.out.println("register name");
+		return "suhas";
 	}
 	@Bean
-	public boolean helath()
+	public Double gheight()
 	{
-		System.out.println("create pencil method with health");
+		System.out.println("register height");
+		return 5.6;
+	}
+	@Bean
+	public Type gnailLength()
+	{
+		System.out.println("register nail");
+		return Type.big;
+	}
+	@Bean
+	public Boolean gisDeath()
+	{
+		System.out.println("register death");
 		return true;
 	}
 	@Bean
-	public boolean stoln()
+	public Integer gage()
 	{
-		System.out.println("create pencil method with health");
-		return false;
+		System.out.println("registered age");
+		int g=23;
+		return g;
 	}
-	
 	@Bean
-	public boolean prt()
+	public LocalDate gbirth()
 	{
-		System.out.println("create pencil method with protien");
+		System.out.println("register birth");
+		return LocalDate.of(2000, 04, 06);
+	}
+	@Bean
+	public LocalDate gdeath()
+	{
+		System.out.println("register death");
+		return LocalDate.of(2020, 05, 07);
+	}
+	@Bean
+	public String gsiblings()
+	{
+		System.out.println("register siblings");
+		return "brother";
+	}
+	@Bean
+	public String gbrtplace()
+	{
+		System.out.println("register gbrtplace");
+		return "gajnuru";
+	}
+	@Bean
+	public String gdeathplace()
+	{
+		System.out.println("register gdeathplace");
+		return "shimoga";
+	}
+	@Bean
+	public String gdress()
+	{
+		System.out.println("register gdress");
+		return "saree";
+	}
+	@Bean
+	public String gcolor()
+	{
+		System.out.println("register gcolor");
+		return "white";
+	}
+	@Bean 
+	public Boolean glegs()
+	{
+		System.out.println("register glegs");
+		return true;
+	}
+	@Bean 
+	public Boolean gisghost()
+	{
+		System.out.println("register is ghost");
 		return true;
 	}
 	@Bean
-	public String brd()
+	public String gprecution()
 	{
-		System.out.println("create pencil method with breed");
-		return "hybrid";
+		System.out.println("register gprecution");
+		return "poision";
 	}
 	@Bean
-	public String bught()
+	public String greason()
 	{
-		System.out.println("create pencil method with bought");
-		return "peoples";
+		System.out.println("register greason");
+		return "love";
 	}
-	
 	@Bean
-	public Integer pric1()
+	public Gender ggender()
 	{
-		System.out.println("create pencil method with names");
-		int t=20;
-		return t;
+		System.out.println("register gender");
+		return Gender.male;
 	}
-	
-	
-	
+	@Bean
+	public Integer gfam()
+	{
+		System.out.println("register family");
+		return 4;
+	}
+	@Bean
+	public String gdeath1()
+	{
+		System.out.println("register death day");
+		return "monady";
+	}
+	@Bean
+	public String gends()
+	{
+		System.out.println("register ends death day");
+		return "few days";
+	}
 	
 	
 }
