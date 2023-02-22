@@ -14,32 +14,25 @@
 	src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
 	integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
 	crossorigin="anonymous"></script>
-
 </head>
 <body>
-<form>
-		<nav class="navbar navbar-expand-lg navbar-light bg-dark">
-			<div class="container-fluid">
-				<nav class="navbar navbar-light bg-light">
-					<div class="container">
-						<a class="navbar-brand" href="#"> <img
-							src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUtavIeb1kN6QGxUKZ-24c9teBzh11P0SxVQ&usqp=CAU"
-							alt="" width="88" height="48">
-						</a>
-					</div>
-					
-				</nav>
-
+<a href="register">Register page</a><br>
+<h1>aeroplane search</h1>
+<h3><span style="color:red;">${message}</span></h3>
+<form action="search" method="get">
+search by id<input type="text" name="id"/>
+<input type="submit" value="search">
+</form>
 <div>
-				<a href="register">Register page</a><br>
-				<a href="Search.jsp">Search page</a><br>
-
-			</div>
-
-		</nav>
-		
-
-	</form>
-
+<h3>search details:</h3>
+<pre>
+company:${dto.companyName}</br>
+name:${dto.name}
+cost:${dto.cost}
+type:${dto.type}
+country:${dto.country}
+</pre>
+</div>
+</
 </body>
 </html>

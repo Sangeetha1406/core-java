@@ -9,8 +9,8 @@ import org.springframework.web.servlet.view.InternalResourceViewResolver;
 
 @Configuration
 @ComponentScan("com.xworkz")
-public class ValantineConfiguration {
-	public ValantineConfiguration() {
+public class AeroplaneConfiguration {
+	public AeroplaneConfiguration() {
 		System.out.println("created configuartion.....");
 	}
 	
@@ -29,6 +29,5 @@ public class ValantineConfiguration {
 		
 		
 	}
-	
-	
+
 }
