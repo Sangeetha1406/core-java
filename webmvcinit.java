@@ -1,9 +1,11 @@
-package com.xworkz.config;
+package com.xworkz.webInit;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.DefaultServletHandlerConfigurer;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
+
+import com.xworkz.configuration.ValantineConfiguration;
 
 public class webmvcinit extends AbstractAnnotationConfigDispatcherServletInitializer implements WebMvcConfigurer {
 
@@ -22,7 +24,7 @@ public class webmvcinit extends AbstractAnnotationConfigDispatcherServletInitial
 	@Override
 	protected Class<?>[] getServletConfigClasses() {
 		System.out.println("runing serv");
-		Class[] ref1= {Configuration1.class};
+		Class[] ref1= {ValantineConfiguration.class};
 		return ref1;
 
 	}

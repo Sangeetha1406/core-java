@@ -1,4 +1,4 @@
-package com.xworkz.config;
+package com.xworkz.configuration;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
@@ -9,8 +9,8 @@ import org.springframework.web.servlet.view.InternalResourceViewResolver;
 
 @Configuration
 @ComponentScan("com.xworkz")
-public class Configuration1 {
-	public Configuration1() {
+public class ValantineConfiguration {
+	public ValantineConfiguration() {
 		System.out.println("created configuartion.....");
 	}
 	
@@ -20,7 +20,6 @@ public class Configuration1 {
 		System.out.println("registering....bean");
 		return new InternalResourceViewResolver("/",".jsp");
 	}
-	
 	@Bean
 	public LocalContainerEntityManagerFactoryBean localContainerEntityManagerFactoryBean()
 	{
@@ -30,5 +29,6 @@ public class Configuration1 {
 		
 		
 	}
+	
 	
 }

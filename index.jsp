@@ -14,8 +14,8 @@
 	src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
 	integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
 	crossorigin="anonymous"></script>
+
 </head>
-<body>
 <body>
 <form>
 		<nav class="navbar navbar-expand-lg navbar-light bg-dark">
@@ -31,7 +31,7 @@
 				</nav>
 
 <div>
-				<a href="egg.jsp">egg page</a><br>
+				<a href="valantine">valantine page</a><br>
 				
 
 			</div>
