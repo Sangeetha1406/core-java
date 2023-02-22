@@ -1,14 +1,15 @@
-package com.xworkz.webinit;
+package com.xworkz.init;
 
+import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.DefaultServletHandlerConfigurer;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
-import com.xworkz.configuration.AeroplaneConfiguration;
+import com.xworkz.configuartion.Configuration1;
 
-public class WebInit extends AbstractAnnotationConfigDispatcherServletInitializer implements WebMvcConfigurer {
+public class MvcInit extends AbstractAnnotationConfigDispatcherServletInitializer implements WebMvcConfigurer {
 
-	public WebInit() {
+	public MvcInit() {
 		System.out.println("created init");
 	}
 	
@@ -23,7 +24,7 @@ public class WebInit extends AbstractAnnotationConfigDispatcherServletInitialize
 	@Override
 	protected Class<?>[] getServletConfigClasses() {
 		System.out.println("runing serv");
-		Class[] ref1= {AeroplaneConfiguration.class};
+		Class[] ref1= {Configuration1.class};
 		return ref1;
 
 	}
@@ -36,11 +37,17 @@ public class WebInit extends AbstractAnnotationConfigDispatcherServletInitialize
 	
 	@Override
 	public void configureDefaultServletHandling(DefaultServletHandlerConfigurer configurer) {
-		
+		// TODO Auto-generated method stub
 		configurer.enable();
 	}
 	
-}
+	
 		
 		
 	
+	
+	
+	
+
+}
+
